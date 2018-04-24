@@ -16,6 +16,7 @@
 		"type": "git",
 		"url": "https://github.com/Dart-Code/Dart-Code.git"
 	},
+	"enableProposedApi": true,
 	"categories": [
 		"Programming Languages",
 		"Snippets",
