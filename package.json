@@ -460,17 +460,28 @@
 				}
 			]
 		},
+		"viewsContainers": {
+			"activitybar": [
+				{
+					"id": "flutter-outline",
+					"title": "Flutter Outline",
+					"icon": "media/icons/flutter.svg"
+				}
+			]
+		},
 		"views": {
 			"explorer": [
-				{
-					"id": "dartFlutterOutline",
-					"name": "Flutter Outline",
-					"when": "dart-code:flutterProjectLoaded && dart-code:showFlutterOutline"
-				},
 				{
 					"id": "dartPackages",
 					"name": "Dependencies",
 					"when": "dart-code:dartProjectLoaded && !dart-code:hidePackageTree"
+				}
+			],
+			"flutter-outline": [
+				{
+					"id": "dartFlutterOutline",
+					"name": "Flutter Outline",
+					"when": "dart-code:flutterProjectLoaded && dart-code:showFlutterOutline"
 				}
 			]
 		},
