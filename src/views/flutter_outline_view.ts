@@ -122,6 +122,8 @@ export class FlutterOutlineProvider implements vs.TreeDataProvider<FlutterWidget
 				currentBest = item;
 			}
 		}
+		if (currentBest === this.rootNode)
+			return null; // Root node isn't actually in the tree.
 		return currentBest;
 	}
 
