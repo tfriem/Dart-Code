@@ -463,8 +463,8 @@
 		"viewsContainers": {
 			"activitybar": [
 				{
-					"id": "flutter-outline",
-					"title": "Flutter Outline",
+					"id": "flutter",
+					"title": "Flutter",
 					"icon": "media/icons/flutter.svg"
 				}
 			]
@@ -477,10 +477,10 @@
 					"when": "dart-code:dartProjectLoaded && !dart-code:hidePackageTree"
 				}
 			],
-			"flutter-outline": [
+			"flutter": [
 				{
 					"id": "dartFlutterOutline",
-					"name": "Flutter Outline",
+					"name": "Outline",
 					"when": "dart-code:flutterProjectLoaded && dart-code:showFlutterOutline"
 				}
 			]
