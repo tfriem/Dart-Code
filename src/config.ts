@@ -51,6 +51,7 @@ class Config {
 	// Preview features.
 	get previewDart2() { return this.getConfig<boolean>("previewDart2"); }
 	get previewExperimentalWindowsDriveLetterHandling() { return this.getConfig<boolean>("previewExperimentalWindowsDriveLetterHandling"); }
+	get previewHotReloadCoverageMarkers() { return this.getConfig<boolean>("previewHotReloadCoverageMarkers"); }
 
 	public for(uri: Uri): ResourceConfig {
 		return new ResourceConfig(uri);
