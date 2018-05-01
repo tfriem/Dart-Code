@@ -218,7 +218,7 @@ export interface FlutterLaunchRequestArguments extends DartLaunchRequestArgument
 }
 
 export interface CoverageData {
-	scriptUri: string;
+	scriptPath: string;
 	hits: FileLocation[];
 }
 
