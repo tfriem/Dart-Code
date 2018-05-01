@@ -216,3 +216,13 @@ export interface FlutterLaunchRequestArguments extends DartLaunchRequestArgument
 	flutterTestLogFile: string;
 	deviceId: string;
 }
+
+export interface CoverageData {
+	scriptUri: string;
+	hits: FileLocation[];
+}
+
+export interface FileLocation {
+	line: number;
+	column: number;
+}
