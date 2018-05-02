@@ -36,7 +36,7 @@ describe("flutter run debugger", () => {
 		return config;
 	}
 
-	it.skip("runs a Flutter application and remains active until told to quit", async () => {
+	it("runs a Flutter application and remains active until told to quit", async () => {
 		const config = await startDebugger(flutterHelloWorldMainFile);
 		await Promise.all([
 			dc.configurationSequence(),
@@ -51,7 +51,7 @@ describe("flutter run debugger", () => {
 		await dc.waitForEvent("terminated");
 	});
 
-	it.skip("runs a Flutter application with a relative path", async () => {
+	it("runs a Flutter application with a relative path", async () => {
 		const config = await startDebugger(flutterHelloWorldMainFile);
 		config.program = path.relative(fsPath(flutterHelloWorldFolder), fsPath(flutterHelloWorldMainFile));
 		await Promise.all([
@@ -78,6 +78,7 @@ describe("flutter run debugger", () => {
 		]);
 	});
 
+	// Skipped because https://github.com/flutter/flutter/issues/17007
 	it.skip("stops on exception", async () => {
 		await openFile(flutterHelloWorldBrokenFile);
 		const config = await startDebugger(flutterHelloWorldBrokenFile);
@@ -91,6 +92,7 @@ describe("flutter run debugger", () => {
 		]);
 	});
 
+	// Skipped because https://github.com/flutter/flutter/issues/17007
 	it.skip("provides exception details when stopped on exception", async () => {
 		await openFile(flutterHelloWorldBrokenFile);
 		const config = await startDebugger(flutterHelloWorldBrokenFile);
